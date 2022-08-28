@@ -1,9 +1,27 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const forwardsArray = [];
+  const backwardsArray = [];
+  for (let i = 0; i <= word.length; i++)
+  { forwardsArray.push(word[i]); 
+    }
+    for (let j = word.length - 1; j >= 0; j--){
+      backwardsArray.push(word[j]); 
+    }
+   if (forwardsArray == backwardsArray)
+   { return true
+  }
+  else {
+    return false;
+  }
 }
 
 /* 
   Add your pseudocode here
+  if (word reads the same way back and forth) 
+  {return true}
+  else {return false}
+
+  if the first letter is the same as the last..
 */
 
 /*
